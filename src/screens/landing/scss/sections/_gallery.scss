@@ -1,0 +1,19 @@
+.gallery {
+    padding: 50px 0;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    &__image {
+        border: 1px solid white;
+        height: 160px;
+        width: 160px;
+    }
+}

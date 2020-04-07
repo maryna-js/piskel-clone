@@ -1,0 +1,26 @@
+@import 'colors';
+.navbar {
+    width: 100%;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        //align-items: center;
+        min-height: 80px;
+        width: 100%;
+    }
+    &__logo {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+    &__logo:hover {
+        color: $pomegranate;
+    }
+    &__button {
+        margin: 20px;
+    }
+}
+

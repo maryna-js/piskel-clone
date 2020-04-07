@@ -1,0 +1,19 @@
+.footer {
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    &__link {
+        margin-top: 20px;
+    }
+    &__link:hover {
+        opacity: 0.5;
+    }
+    &__text {
+        padding: 0 10px;
+        color: white;
+        width: 240px;
+    }
+
+}

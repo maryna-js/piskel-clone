@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Piskel Clone</title>
+    <script src="https://kit.fontawesome.com/11cfb4c476.js" crossorigin="anonymous"></script>
+<link href="app.bundle.css" rel="stylesheet"></head>
+<body>
+    <div class ="header">
+        <a class="header-logo" href="./index.html">PISKEL</a>
+        <button class="header-sign">Sign in</button>
+    </div>
+    <div class="toolbox left">
+        <div class="groups">
+            <div class="group tools">
+                <div class="item active" data-tool="pencil" title="Pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="item" data-tool="paint-bucket" title="Paint bucket">
+                    <i class="fas fa-fill-drip"></i>
+                </div>
+                <div class="item" data-tool="eraser" title="Eraser">
+                    <i class="fas fa-eraser"></i>
+                </div>
+                <div class="item" data-tool="line" title="Line">
+                    <i class="fas fa-slash"></i>
+                </div>
+            </div>
+        <div class="group shapes">
+            
+            <div class="item" data-tool="rectangle" title="Rectangle">
+                <i class="far fa-square"></i>
+            </div>
+            <div class="item" data-tool="circle" title="Circle">
+                <i class="far fa-circle"></i>
+            </div>
+        </div>
+        <div class="group linewidths">
+            <div class="item active" data-pen-size = "4" title="4 Pixel">
+                <div class="linewidth" style="width: 7px; height: 7px"></div>
+            </div>
+            <div class="item" data-pen-size = "8" title="8 Pixel">
+                <div class="linewidth" style="width: 10px; height: 10px"></div>
+            </div>
+            <div class="item" data-pen-size = "16" title="16 Pixel">
+                <div class="linewidth" style="width: 14px; height: 14px"></div>
+            </div>
+            <div class="item" data-pen-size = "32" title="32 Pixel">
+                <div class="linewidth" style="width: 17px; height: 17px"></div>
+            </div>
+        </div>
+        <div class="group swatches">
+            <input class="primary" type="color" value="#ffffff">
+            <input class="secondary" type="color" value="#ff5533">
+            <i class="fas fa-share"></i>
+        </div>
+    </div>
+    <div class="frames">
+        <ul class="frames-list">
+            <li class="frame-unit">
+                <canvas class="frame active-frame"></canvas>
+            </li>
+        </ul>  
+            <button class="frame-button_create">Add new frame</button>
+        </div>  
+    </div>
+    <div class="canvas-container">
+        <canvas id="canvas" width="800" height="800"></canvas>
+    </div>
+    <div class="toolbox right">
+        <div class="canvas-animation">
+            <canvas class="canvas-animation_item"></canvas>
+            <button class="canvas-animation_fullscreen"><i class="fas fa-arrows-alt"></i></button>
+            <div class="slidecontainer">
+                <p class="slidecontainer-output"></p>
+                <input type="range" min="0" max="24" value="0" class="slidecontainer-slider" id="myRange">
+            </div>
+            <button class="canvas-animation_upng">upng</button>
+            <button class="canvas-animation_gif">gif</button>
+        </div>
+        <div class="toolbox-resize">
+            <p class="toolbox-resize_text">Resize</p>
+            <button class="toolbox-resize_item32" data-resize = "32">32</button>
+            <button class="item" data-resize = "64">64</button>
+            <button class="item" data-resize = "128">128</button>
+        </div>
+    </div> 
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

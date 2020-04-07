@@ -1,0 +1,28 @@
+@import 'colors';
+.feature {
+    padding: 50px 0;
+    background: $codGray;
+    &__title {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        flex-basis: 33%;
+        text-align: center;
+    }
+    &__image {
+        border: 1px solid white;
+        height: 160px;
+        width: 160px;
+    }
+    &__text {
+        color: white;
+    }
+}
